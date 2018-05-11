@@ -2,7 +2,7 @@ package com.gsafety.code;
 
 import java.sql.*;
 
-public class Demo96 {
+public class Demo97 {
 	static Connection con;
 	static PreparedStatement sql;
 	static ResultSet res;
@@ -18,7 +18,7 @@ public class Demo96 {
 		return con;
 	}
 	public static void main(String[] args) {
-		Demo96 c = new Demo96();
+		Demo97 c = new Demo97();
 		con = c.getConnection();
 		try {
 			sql = con.prepareStatement("delete from tb_stu where birthday < ?");
