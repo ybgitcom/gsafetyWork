@@ -25,7 +25,7 @@ public class Demo97 {
 			sql.setString(1, "2000-09-01");
 			sql.executeUpdate();
 			System.out.println("数据删除完毕");
-		} catch (SQLException e) {        
+		} catch (SQLException e) {
 			// TODO 自动生成 catch 块
 			e.printStackTrace();
 		}
