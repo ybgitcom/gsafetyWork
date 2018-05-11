@@ -3,40 +3,41 @@ package com.gsafety.code;
 import javax.swing.*;
 import java.awt.*;
 
-public class Demo89 extends JFrame {
-	private static final long serialVersionUID = 1L;
-	final JProgressBar progressBar = new JProgressBar();
+public class demo89 extends jframe {
+	private static final long serialversionuid = 1l;
+	final jprogressbar progressbar = new jprogressbar();
 
-	public Demo89() {
+	public demo89() {
 
-		getContentPane().add(progressBar, BorderLayout.NORTH);
-		progressBar.setStringPainted(true);
+		getcontentpane().add(progressbar, borderlayout.north);
+		progressbar.setstringpainted(true);
 
-		Thread threadA = new Thread(new Runnable() {
+		thread threada = new thread(new runnable() {
 			int count = 0;
 
 			public void run() {
 				while (true) {
-					progressBar.setValue(++count);
+					progressbar.setvalue(++count);
 					try {
-						Thread.sleep(100);
-					} catch (Exception e) {
-						e.printStackTrace();
+						thread.sleep(100);
+					} catch (exception e) {
+						e.printstacktrace();
 					}
 				}
 			}
 		});
-		threadA.start();
+		threada.start();
 	}
 
-	public static void main(String[] args) {
-		init(new Demo89(), 100, 100);
+	public static void main(string[] args) {
+		init(new demo89(), 100, 100);
 
 	}
 
-	public static void init(JFrame frame, int width, int height) {
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(width, height);
-		frame.setVisible(true);
+	public static void init(jframe frame, int width, int height) {
+		frame.setdefaultcloseoperation(jframe.exit_on_close);
+		frame.setsize(width, height);
+		frame.setvisible(true);
 	}
 }
+
