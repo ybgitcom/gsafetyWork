@@ -1,4 +1,4 @@
-package com.test.code;
+package com.gsafety.code;
 
 /**
  * created by yb
@@ -6,13 +6,13 @@ package com.test.code;
  */
 public class Demo7 {
 
-    public static void main(String[] args) { // Ö÷·½·¨
-        byte mybyte = 124; // ÉùÃ÷byteÐÍ±äÁ¿²¢¸³Öµ
-        short myshort = 32564; // ÉùÃ÷shortÐÍ±äÁ¿²¢¸³Öµ
-        int myint = 45784612; // ÉùÃ÷intÐÍ±äÁ¿²¢¸³Öµ
-        long mylong = 46789451; // ÉùÃ÷longÐÍ±äÁ¿²¢¸³Öµ
-        long result = mybyte + myshort + myint + mylong;// »ñµÃ¸÷ÊýÏà¼ÓºóµÄ½á¹û
-        System.out.println("½á¹ûÎª£º" + result); // ½«ÒÔÉÏ±äÁ¿Ïà¼ÓµÄ½á¹ûÊä³ö
+    public static void main(String[] args) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        byte mybyte = 124; // ï¿½ï¿½ï¿½ï¿½byteï¿½Í±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        short myshort = 32564; // ï¿½ï¿½ï¿½ï¿½shortï¿½Í±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        int myint = 45784612; // ï¿½ï¿½ï¿½ï¿½intï¿½Í±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        long mylong = 46789451; // ï¿½ï¿½ï¿½ï¿½longï¿½Í±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        long result = mybyte + myshort + myint + mylong;// ï¿½ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ï¿½Óºï¿½Ä½ï¿½ï¿½
+        System.out.println("ï¿½ï¿½ï¿½Îªï¿½ï¿½" + result); // ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ï¿½ï¿½ï¿½ï¿½ÓµÄ½ï¿½ï¿½ï¿½ï¿½ï¿½
     }
 }
 

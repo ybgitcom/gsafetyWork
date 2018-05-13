@@ -1,4 +1,4 @@
-package com.test.code;
+package com.gsafety.code;
 
 /**
  * created by yb

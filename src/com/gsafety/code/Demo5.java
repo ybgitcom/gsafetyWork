@@ -1,5 +1,4 @@
-package com.test.code;
-
+package com.gsafety.code;
 /**
  * created by yb
  * Date:2018/5/8

@@ -13,22 +13,22 @@ import java.util.Scanner;
 public class unit17 {
     public static void main(String[] args) throws Exception {
         Scanner scan = new Scanner(System.in);
-        String fileName = null ; // 保存文件名称
-        String fileContent = null ; // 保存文件内容
+        String fileName = null; // 保存文件名称
+        String fileContent = null; // 保存文件内容
         System.out.print("请输入 文件名 称： "); // 提示信息
-        scan.useDelimiter("\n") ; // 设置分隔符
+        scan.useDelimiter("\n"); // 设置分隔符
         if (scan.hasNext()) { // 有输入内容
-            fileName = scan.next().trim() ; // 接收数据
+            fileName = scan.next().trim(); // 接收数据
             System.out.print("请输入文件内容： ");
             if (scan.hasNext()) {
-                fileContent = scan.next().trim() ; // 接收数据
-                File file = new File(fileName) ;
+                fileContent = scan.next().trim(); // 接收数据
+                File file = new File(fileName);
                 if (!file.getParentFile().exists()) { // 文件目录不存在
-                    file.getParentFile().mkdirs() ; // 创建目录
+                    file.getParentFile().mkdirs(); // 创建目录
                 }
                 PrintStream out = new PrintStream(new FileOutputStream(file));
-                out.print(fileContent) ;
-                out.close() ;
+                out.print(fileContent);
+                out.close();
             }
         }
     }
