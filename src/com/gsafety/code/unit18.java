@@ -1,4 +1,4 @@
-package com.test.code;
+package com.gsafety.code;
 
 /**
  * created by yb
@@ -6,7 +6,7 @@ package com.test.code;
  */
 //设计四个线程对象，两个线程执行减操作，两个线程执行加操作。
 class Message{
-    private int data=10;
+    private int data=25;
     private boolean flag = true;
     /**
      * 加法操作
