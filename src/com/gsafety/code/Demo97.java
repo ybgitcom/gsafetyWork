@@ -8,10 +8,10 @@ public class Demo97 {
 	static ResultSet res;
 	public Connection getConnection() {
 		try {
-			Class.forName("net.sourceforge.jtds.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection(
-					"jdbc:jtds:sqlserver://localhost:1433/"
-							+ "db_jdbc", "sa", "");
+					"jdbc:mysql"
+							+ "://localhost:3306/yb-test", "root", "root");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -21,7 +21,7 @@ public class Demo97 {
 		Demo97 c = new Demo97();
 		con = c.getConnection();
 		try {
-			sql = con.prepareStatement("delete from tb_stu where birthday < ?");
+			sql = con.prepareStatement("delete from where birthday < ?");
 			sql.setString(1, "2000-09-01");
 			sql.executeUpdate();
 			System.out.println("Êý¾ÝÉ¾³ýÍê±Ï");

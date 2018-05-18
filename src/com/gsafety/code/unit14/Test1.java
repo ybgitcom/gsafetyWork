@@ -5,28 +5,28 @@ import java.util.List;
 
 public class Test1 {
     /**
-     * é¢˜ç›®ï¼šListé›†åˆæ’å…¥1-100æ•´æ•°ï¼Œç„¶åä¸€å¤„ç´¢å¼•ä½ç½®ä¸º10çš„å¯¹è±¡
+     * ÌâÄ¿£ºList¼¯ºÏ²åÈë1-100ÕûÊı£¬È»ºóÒ»´¦Ë÷ÒıÎ»ÖÃÎª10µÄ¶ÔÏó
      *
-     * çŸ¥è¯†ç‚¹ï¼šå¯¹Listç±»ä¸­add()å’Œremove()æ–¹æ³•ä½¿ç”¨
+     * ÖªÊ¶µã£º¶ÔListÀàÖĞadd()ºÍremove()·½·¨Ê¹ÓÃ
      *
-     * æ€è·¯ï¼šå®šä¹‰è®¡æ•°å™¨ï¼Œå¾ªç¯add,æ·»åŠ å®Œæˆå®ç°remove
+     * Ë¼Â·£º¶¨Òå¼ÆÊıÆ÷£¬Ñ­»·add,Ìí¼ÓÍê³ÉÊµÏÖremove
      */
     public static void main(String[] args) {
-        List<Integer> list=new ArrayList<Integer>();//åˆ›å»ºListå¯¹è±¡
-        System.out.println("Listé›†åˆæ’å…¥1-100æ•´æ•°ï¼Œç„¶åä¸€å¤„ç´¢å¼•ä½ç½®ä¸º10çš„å¯¹è±¡");
+        List<Integer> list=new ArrayList<Integer>();//´´½¨List¶ÔÏó
+        System.out.println("List¼¯ºÏ²åÈë1-100ÕûÊı£¬È»ºóÒ»´¦Ë÷ÒıÎ»ÖÃÎª10µÄ¶ÔÏó");
         int num=100;
         while (num-->0){
             list.add(num);
         }
-        System.out.println("æ‰“å°Listä¸­æ‰€æœ‰å¯¹è±¡ï¼š");
+        System.out.println("´òÓ¡ListÖĞËùÓĞ¶ÔÏó£º");
         for (int i = 0; i <list.size() ; i++) {
             System.out.printf(String.valueOf(list.get(i)));
             System.out.printf(";");
         }
         System.out.println("");
-        //åˆ é™¤ç´¢å¼•ä½ç½®ä¸º10çš„å…ƒç´ 
+        //É¾³ıË÷ÒıÎ»ÖÃÎª10µÄÔªËØ
         list.remove(10);
-        System.out.println("æ‰“å°æœ€æ–°Listä¸­æ‰€æœ‰å¯¹è±¡ï¼š");
+        System.out.println("´òÓ¡×îĞÂListÖĞËùÓĞ¶ÔÏó£º");
         for (int i = 0; i <list.size() ; i++) {
             System.out.printf(String.valueOf(list.get(i)));
             System.out.printf(";");

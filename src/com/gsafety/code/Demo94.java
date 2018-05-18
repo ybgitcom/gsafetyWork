@@ -9,10 +9,10 @@ public class Demo94 {
 
 	public Connection getConnection() {
 		try {
-			Class.forName("net.sourceforge.jtds.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection(
-					"jdbc:jtds:sqlserver://localhost:1433/" + "db_jdbc",
-					"sa", "");
+					"jdbc:mysql"
+							+ "://localhost:3306/yb-test", "root", "root");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -23,7 +23,7 @@ public class Demo94 {
 		Demo94 c = new Demo94(); // 创建本类对象
 		con = c.getConnection(); // 调用连接数据库方法
 		try {
-			sql = con.prepareStatement("select * from tb_stu"); // 查询数据库
+			sql = con.prepareStatement("select * from yb-test"); // 查询数据库
 			res = sql.executeQuery(); // 执行SQL语句
 			System.out.println("执行增加、修改、删除前数据:");
 			while (res.next()) {
@@ -36,20 +36,20 @@ public class Demo94 {
 				System.out.print(" 性别:" + sex);
 				System.out.println(" 生日：" + birthday);
 			}
-			sql = con.prepareStatement("insert into tb_stu values(?,?,?)");
+			sql = con.prepareStatement("insert into yb-test values(?,?,?)");
 			sql.setString(1, "张一"); // 预处理添加数据
 			sql.setString(2, "女");
 			sql.setString(3, "2012-12-1");
 			sql.executeUpdate();
-			sql = con.prepareStatement("update tb_stu set birthday "
-					+ "= ? where id = (select min(id) from tb_stu)");
+			sql = con.prepareStatement("update yb-testset birthday "
+					+ "= ? where id = (select min(id) from yb-test)");
 			sql.setString(1, "2012-12-02"); // 更新数据
 			sql.executeUpdate();
 			Statement stmt = con.createStatement();
-			stmt.executeUpdate("delete from tb_stu where id = "
-					+ "(select min(id)from tb_stu)");
-			// 查询修改数据后的tb_stu表中数据
-			sql = con.prepareStatement("select * from tb_stu");
+			stmt.executeUpdate("delete from yb-test where id = "
+					+ "(select min(id)from yb-test)");
+			// 查询修改数据后的yb-test表中数据
+			sql = con.prepareStatement("select * from yb-test");
 			res = sql.executeQuery(); // 执行SQL语句
 			System.out.println("执行增加、修改、删除后的数据:");
 			while (res.next()) {

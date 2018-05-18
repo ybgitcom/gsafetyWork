@@ -7,14 +7,14 @@ import java.util.Set;
 
 public class test2 {
     /**
-     * é¢˜ç›®ï¼šä½¿ç”¨Seté›†åˆï¼ŒListé›†åˆï¼Œåˆ†åˆ«æ·»åŠ å­—æ¯ï¼Œè§‚å¯Ÿé‡å¤å­—æ¯æ·»åŠ çŠ¶æ€
+     * ÌâÄ¿£ºÊ¹ÓÃSet¼¯ºÏ£¬List¼¯ºÏ£¬·Ö±ğÌí¼Ó×ÖÄ¸£¬¹Û²ìÖØ¸´×ÖÄ¸Ìí¼Ó×´Ì¬
      *
-     * çŸ¥è¯†ç‚¹ï¼šè€ƒå¯ŸSeté›†åˆå’ŒListé›†åˆçš„ç‰¹æ€§ï¼›Seté›†åˆä¸­ä¸å…è®¸å…ƒç´ é‡å¤ï¼ŒListå…è®¸å‡ºç°é‡å¤å…ƒç´ 
+     * ÖªÊ¶µã£º¿¼²ìSet¼¯ºÏºÍList¼¯ºÏµÄÌØĞÔ£»Set¼¯ºÏÖĞ²»ÔÊĞíÔªËØÖØ¸´£¬ListÔÊĞí³öÏÖÖØ¸´ÔªËØ
      */
     public static void main(String[] args) {
         Set<String> set=new HashSet<>();
         List<String> list=new ArrayList<>();
-        System.out.println("Seté›†åˆæ·»åŠ å­—æ¯ï¼š");
+        System.out.println("Set¼¯ºÏÌí¼Ó×ÖÄ¸£º");
         set.add("A");
         set.add("a");
         set.add("A");
@@ -22,7 +22,7 @@ public class test2 {
         set.add("c");
         System.out.println(set);
         System.out.println("-------------");
-        System.out.println("Listé›†åˆæ·»åŠ å­—æ¯ï¼š");
+        System.out.println("List¼¯ºÏÌí¼Ó×ÖÄ¸£º");
         list.add("A");
         list.add("a");
         list.add("A");
