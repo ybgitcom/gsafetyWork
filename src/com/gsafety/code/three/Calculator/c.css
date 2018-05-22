@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.main{
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    background: #333;
+}
+
+.header{
+    overflow: hidden;
+}
+
+.nav{
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+
+    cursor: pointer;
+}
+
+.active{
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.container{
+    display: none;
+    width: 100%;
+}
+
+.show{
+    display: block;
+}
+
+.display{
+    width: 80%;
+    height: 50px;
+    margin: 10px auto;
+}
+
+.display textarea{
+    width: 100%;
+    height: 50px;
+    resize: none;
+    border: none;
+    font-size: 30px;
+    line-height: 50px;
+    outline: none;
+    color:white;
+    background:#333;
+    text-align: right;
+}
+
+div.funcs{
+    width: 100%;
+}
+
+div.row{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+div.func{
+    width: 100px;
+    height: 100px;
+    float: left;
+    font-size: 36px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.func:hover{
+    border-radius: 50%;
+    background: #555;
+}
+
+.equal{
+    background: rgb(150, 12, 12);
+    border-radius: 50%;
+}
+
+.equal:hover{
+    background: rgb(255, 12, 12);
+}
